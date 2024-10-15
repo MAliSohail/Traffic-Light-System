@@ -3,26 +3,29 @@ int yellow = 3;
 int green = 2;
 
 void setup() {
+pinMode(red,OUTPUT);
 pinMode(green,OUTPUT);
 pinMode(yellow,OUTPUT);
-pinMode(red,OUTPUT);
 } 
 
 void loop() {
-digitalWrite(green,HIGH);
+digitalWrite(red,HIGH);
 delay(20000);
-digitalWrite(green,LOW); 
+digitalWrite(red,LOW); 
 delay(250);
-
-
+  
 digitalWrite(yellow,HIGH); 
 delay(3000); 
 digitalWrite(yellow,LOW);
 delay(250); 
 
-
-digitalWrite(red,HIGH);
+digitalWrite(green,HIGH);
 delay(20000); 
-digitalWrite(red,LOW); 
+digitalWrite(green,LOW); 
+delay(250); 
+
+digitalWrite(yellow,HIGH); 
+delay(3000); 
+digitalWrite(yellow,LOW);
 delay(250); 
 }
